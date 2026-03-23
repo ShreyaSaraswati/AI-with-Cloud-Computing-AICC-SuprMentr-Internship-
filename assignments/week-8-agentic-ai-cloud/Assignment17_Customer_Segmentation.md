@@ -1,4 +1,4 @@
-# Assignment 16 – Customer Segmentation
+# Assignment 17 – Customer Segmentation
 
 ## Problem Statement
 Perform K-Means clustering on a mall customer dataset and group customers based on similar characteristics.
