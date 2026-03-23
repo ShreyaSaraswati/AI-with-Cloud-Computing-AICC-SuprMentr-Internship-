@@ -1,19 +1,14 @@
-# Assignment 01
-
-```md id="a1md"
 # Assignment 01 – Password Authentication
-📅 Date: 07-02-2026
 
 ## Problem Statement
 Create a strong password authentication system using Python.
 
-Password must:
-- contain uppercase letter
-- contain lowercase letter
-- contain number
-- be at least 6 characters long
-
-User gets 3 login attempts.
+Requirements:
+- Minimum 6 characters
+- Must include uppercase letter
+- Must include lowercase letter
+- Must include number
+- User gets 3 login attempts
 
 ---
 
@@ -54,4 +49,27 @@ while attempts > 0:
         print(f"Incorrect password. Attempts left: {attempts}")
 
 if attempts == 0:
-    print("Account locked.")
+    print("Account locked. Too many failed attempts.")
+```
+
+---
+
+## Output
+
+```
+Create a password: He@#$%123
+Password is strong.
+
+Password created successfully!
+
+Enter your password to login: He@#$%123
+Login successful! ✅
+```
+
+---
+
+## Concepts Used
+- Python
+- Regex
+- Conditions
+- Loops
