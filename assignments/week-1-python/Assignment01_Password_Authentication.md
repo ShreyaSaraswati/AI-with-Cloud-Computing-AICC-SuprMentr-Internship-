@@ -42,7 +42,7 @@ while attempts > 0:
     login = input("Enter your password to login: ")
 
     if login == password:
-        print("Login successful! ✅")
+        print("Login successful! ")
         break
     else:
         attempts -= 1
@@ -63,7 +63,7 @@ Password is strong.
 Password created successfully!
 
 Enter your password to login: He@#$%123
-Login successful! ✅
+Login successful! 
 ```
 
 ---
