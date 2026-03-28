@@ -1,12 +1,14 @@
-# Assignment 11 — Build Your First Dataset
+# Assignment 11 – Build Your First Dataset
 
-## Objective
-Create a simple dataset and identify:
-- feature (input variable)
-- label (output variable)
-- relationship between variables
+## Problem Statement
+Create a simple dataset and understand how Machine Learning models use data.
 
-Understanding dataset structure is fundamental to Machine Learning workflows.
+Goal:
+- Identify feature (input variable)
+- Identify label (output variable)
+- Understand relationship between variables
+
+Dataset structure is the foundation of Machine Learning workflows.
 
 ---
 
@@ -25,35 +27,51 @@ Understanding dataset structure is fundamental to Machine Learning workflows.
 | 9 | 90 |
 | 10 | 95 |
 
-Feature:
-Study_Hours
+---
 
-Label:
-Marks
+## Feature and Label
+
+**Feature (Input Variable):**
+- Study_Hours
+
+**Label (Output Variable):**
+- Marks
 
 ---
 
-## Implementation
+## Relationship Between Variables
+There is a positive relationship between study hours and marks.
 
+As study hours increase, marks also increase.  
+This shows a linear pattern, which can be used in simple Machine Learning models such as Linear Regression.
+
+---
+
+## Code
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Creating dataset
 data = {
-    "Study_Hours":[1,2,3,4,5,6,7,8,9,10],
-    "Marks":[40,45,50,55,65,70,75,85,90,95]
+    "Study_Hours": [1,2,3,4,5,6,7,8,9,10],
+    "Marks": [40,45,50,55,65,70,75,85,90,95]
 }
 
 df = pd.DataFrame(data)
 
+print("Dataset:")
 print(df)
 
+# Plot relationship
 plt.scatter(df["Study_Hours"], df["Marks"])
 
 plt.xlabel("Study Hours")
 plt.ylabel("Marks")
 
 plt.title("Study Hours vs Marks")
+
+plt.savefig("A11_scatter.png")
 
 plt.show()
 ```
@@ -62,27 +80,55 @@ plt.show()
 
 ## Output
 
+### Dataset Output
 ```
    Study_Hours  Marks
 0            1     40
 1            2     45
-...
+2            3     50
+3            4     55
+4            5     65
+5            6     70
+6            7     75
+7            8     85
+8            9     90
 9           10     95
-```
-
-Graph Insight:
-Strong positive correlation between study hours and marks.
-
-Add screenshot:
-
-```
-assets/assignment11_scatter.png
 ```
 
 ---
 
-## Key Learnings
+## Scatter Plot Insight
 
-structured datasets contain features and labels  
-visualization helps understand relationships  
-foundation for regression models
+Positive correlation between Study Hours and Marks.
+
+As study time increases, performance improves.
+
+### Graph
+![Scatter Plot](../images/A11_scatter.png)
+
+<!-- OR if using assets folder -->
+<!-- ![Scatter Plot](../assets/assignment11_scatter.png) -->
+
+---
+
+## Concepts Used
+- Dataset Creation
+- Features and Labels
+- Data Visualization
+- Scatter Plot
+- Correlation
+- Python (Pandas, Matplotlib)
+
+---
+
+## Key Learnings
+- Structured datasets contain features (inputs) and labels (outputs)
+- Visualization helps understand relationships between variables
+- Scatter plots help identify trends in data
+- Positive correlation means both variables increase together
+- Forms foundation for regression models in Machine Learning
+
+---
+
+## Conclusion
+Understanding dataset structure is the first step in Machine Learning. Identifying features and labels helps in building predictive models. Visualization helps detect patterns and relationships in data.
