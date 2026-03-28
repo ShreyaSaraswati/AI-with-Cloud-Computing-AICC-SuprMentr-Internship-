@@ -1,7 +1,6 @@
 # Assignment 04 – Logic Builder (FizzBuzz)
-**Date:** 17-02-2026
 
-## Description
+## Problem Statement
 Print numbers from 1 to 50 using FizzBuzz logic:
 
 - Multiples of 3 → print "Fizz"
