@@ -1,11 +1,23 @@
 # AI with Cloud Computing – AICC SuprMentr Internship
 
-This repository contains assignments completed as part of the **AI with Cloud Computing Internship**.
-
-The work demonstrates practical understanding of core concepts in Python, data analysis, and introductory machine learning through hands-on problem solving.
+This repository contains assignments and tasks completed as part of the **AI with Cloud Computing Internship**, covering fundamental and practical concepts in **Python, Data Analysis, Machine Learning, and Natural Language Processing (NLP)**.
 
 ---
 
+# Repository Structure
+
+```
+AI-with-Cloud-Computing-AICC-SuprMentr-Internship
+│
+├── Assignments
+│   ├── images
+│   ├── Assignment-01.md
+│
+├── Tasks
+│   ├── images
+│   ├── Task-01.md
+
+```
 ## Key Areas Covered
 
 Python programming fundamentals  
@@ -16,29 +28,32 @@ Supervised learning (Linear Regression, KNN, Decision Trees)
 Unsupervised learning (K-Means Clustering)  
 Text preprocessing for NLP tasks  
 
----
-
-## Tools & Libraries
+# Tools and Libraries Used
 
 Python  
-Google Colab  
 NumPy  
 Pandas  
 Matplotlib  
 Scikit-learn  
+Jupyter Notebook / Google Colab  
+GitHub  
 
 ---
 
-## Purpose of the Repository
+# Purpose of this Repository
 
-The assignments are structured to progressively build intuition around:
+This repository serves as:
+- a record of my learning progress
+- a practical reference for ML basics
+- a demonstration of hands-on skills
+- a foundation for more advanced AI projects
 
-how datasets are created and cleaned  
-how machine learning models learn patterns  
-how predictions are generated from data  
-how results can be visualized and interpreted  
-
-Each file contains problem statements, implementation, and observations.
+Each file includes:
+- problem statement
+- implementation code
+- output explanation
+- concepts used
+- key learnings
 
 ---
 
