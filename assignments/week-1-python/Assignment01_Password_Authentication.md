@@ -1,4 +1,4 @@
-# Assignment 01 – Password Authentication
+# Assignment 01 – Strong Password Authentication System
 
 ## Problem Statement
 Create a strong password authentication system using Python.
@@ -13,8 +13,9 @@ Requirements:
 ---
 
 ## Code
-
 ```python
+# Simple Password Authentication Program
+
 import re
 
 def check_password_strength(password):
@@ -42,7 +43,7 @@ while attempts > 0:
     login = input("Enter your password to login: ")
 
     if login == password:
-        print("Login successful! ")
+        print("Login successful!")
         break
     else:
         attempts -= 1
@@ -55,7 +56,6 @@ if attempts == 0:
 ---
 
 ## Output
-
 ```
 Create a password: He@#$%123
 Password is strong.
@@ -71,5 +71,22 @@ Login successful!
 ## Concepts Used
 - Python
 - Regex
+- Functions
 - Conditions
 - Loops
+- Authentication logic
+- Basic security
+
+---
+
+## Learning Outcome
+- Learned how password authentication works
+- Learned how to check password strength
+- Learned how to use regex in python
+- Learned how login attempts are limited
+- Understood importance of strong password security
+
+---
+
+## Conclusion
+This program demonstrates a simple password authentication system using Python. It ensures password strength and restricts login attempts to improve security.
