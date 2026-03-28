@@ -1,18 +1,19 @@
-# Assignment 15 — Decision Tree Classification
+# Assignment 16 – Decision Tree Classification
 
-## Objective
+## Problem Statement
 Build a Decision Tree model to predict whether a person should play outside based on weather conditions.
 
-Decision Trees are supervised learning algorithms used for classification and regression tasks.
+Decision Trees are supervised learning algorithms used for classification and regression tasks.  
+They split data into branches based on feature values to make predictions.
 
-They work by splitting data into branches based on feature values.
+Decision Trees are easy to interpret and help visualize decision-making logic.
 
 ---
 
 ## Dataset
 
 | Weather | Temperature | Humidity | Wind | PlayOutside |
-|--------|------------|---------|------|------------|
+|--------|------------|---------|------|-------------|
 | Sunny | Hot | High | Weak | No |
 | Sunny | Hot | High | Strong | No |
 | Overcast | Hot | High | Weak | Yes |
@@ -22,15 +23,18 @@ They work by splitting data into branches based on feature values.
 | Overcast | Mild | Normal | Strong | Yes |
 | Sunny | Cool | High | Weak | No |
 
+Target variable:
+PlayOutside (Yes / No)
+
 ---
 
-## Implementation
-
+## Code
 ```python
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 import matplotlib.pyplot as plt
 
+# Dataset
 data = {
 'Weather':['Sunny','Sunny','Overcast','Rain','Rain','Rain','Overcast','Sunny'],
 'Temperature':['Hot','Hot','Hot','Mild','Cool','Cool','Mild','Cool'],
@@ -41,24 +45,30 @@ data = {
 
 df = pd.DataFrame(data)
 
+# Convert categorical data into numerical values
 X = pd.get_dummies(df.drop("PlayOutside",axis=1))
 
+# Target variable
 y = df["PlayOutside"]
 
+# Train model
 model = DecisionTreeClassifier()
 
 model.fit(X,y)
 
+# Visualize tree
 plt.figure(figsize=(12,8))
 
 plot_tree(
-model,
-feature_names=X.columns,
-class_names=model.classes_,
-filled=True
+    model,
+    feature_names=X.columns,
+    class_names=model.classes_,
+    filled=True
 )
 
 plt.title("Decision Tree")
+
+plt.savefig("A16_decision_tree.png")
 
 plt.show()
 ```
@@ -69,39 +79,49 @@ plt.show()
 
 Decision Tree visualization showing rules used for prediction.
 
-Example rule:
+### Decision Tree Graph
+![Decision Tree](../images/A16_decision_tree.png)
 
-if Weather = Overcast → PlayOutside = Yes
+---
 
-if Weather = Sunny and Humidity = High → PlayOutside = No
+## Example Decision Rules
 
-Add screenshot:
+Example logic learned by model:
 
-```
-assets/assignment15_decision_tree.png
-```
+- If Weather = Overcast → PlayOutside = Yes
+- If Weather = Sunny and Humidity = High → PlayOutside = No
+- If Weather = Rain and Wind = Strong → PlayOutside = No
 
 ---
 
 ## How Decision Tree Works
-
-model splits data based on feature importance  
-each node represents a decision condition  
-leaf nodes represent final prediction  
-
----
-
-## Key Learnings
-
-Decision Trees are interpretable models  
-useful for classification problems  
-help understand decision logic visually  
+- Model splits dataset based on feature importance
+- Each node represents a decision condition
+- Branches represent possible outcomes
+- Leaf nodes represent final predictions
+- Model chooses best feature for splitting
 
 ---
 
 ## Concepts Used
+- Decision Tree Algorithm
+- Classification
+- Feature Encoding (One-Hot Encoding)
+- Model Visualization
+- Supervised Learning
+- Scikit-learn
+- Pandas
 
-Decision Tree  
-Classification  
-Feature Encoding  
-Model Visualization
+---
+
+## Key Learnings
+- Decision Trees are easy to interpret
+- Categorical variables must be encoded
+- Tree structure helps understand decision logic
+- Useful for classification problems
+- Visual representation improves model understanding
+
+---
+
+## Conclusion
+Decision Trees are powerful and interpretable Machine Learning models used for classification tasks. They help understand decision logic clearly and are widely used in predictive analytics.
