@@ -1,4 +1,7 @@
 # Assignment 12 – KNN in Real Life
+Date: 07-03-2026
+
+---
 
 ## Problem Statement
 Understand how recommendation systems work using the K-Nearest Neighbors (KNN) algorithm.
