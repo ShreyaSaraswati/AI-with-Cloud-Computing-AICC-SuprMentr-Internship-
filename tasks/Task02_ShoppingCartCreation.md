@@ -1,4 +1,7 @@
 # Task 02 – Shopping Cart with Lists
+Date: 11-02-2026
+
+---
 
 ## Problem Statement
 1. Create a shopping cart using Python lists  
@@ -8,6 +11,7 @@
 
 ---
 
+## Code:
 ```python
 # Create a shopping cart
 cart = []
