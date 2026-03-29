@@ -1,4 +1,7 @@
 # Assignment 04 – Logic Builder (FizzBuzz)
+Date: 17-02-2026
+
+---
 
 ## Problem Statement
 Print numbers from 1 to 50 using FizzBuzz logic:
