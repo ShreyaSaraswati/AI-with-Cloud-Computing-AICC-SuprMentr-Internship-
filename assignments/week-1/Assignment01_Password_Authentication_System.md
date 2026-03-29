@@ -1,4 +1,7 @@
 # Assignment 01 – Strong Password Authentication System
+Date: 07-02-2026
+
+---
 
 ## Problem Statement
 Create a strong password authentication system using Python.
