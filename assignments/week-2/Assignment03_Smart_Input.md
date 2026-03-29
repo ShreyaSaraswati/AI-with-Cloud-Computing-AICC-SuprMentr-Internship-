@@ -1,4 +1,7 @@
 # Assignment 03 – Smart Input Program
+Date: 12-02-2026
+
+---
 
 ## Problem Statement
 Create a Python program that takes name, age, and hobby as input.
