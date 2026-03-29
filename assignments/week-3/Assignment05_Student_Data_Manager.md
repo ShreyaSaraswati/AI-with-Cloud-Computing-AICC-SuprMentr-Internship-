@@ -1,4 +1,7 @@
 # Assignment 05 – Student Data Manager
+Date: 19-02-2026
+
+---
 
 ## Problem Statement
 Store marks of 5 students using a Python dictionary.  
