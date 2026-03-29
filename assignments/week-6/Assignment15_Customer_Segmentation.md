@@ -1,4 +1,7 @@
 # Assignment 15 – Customer Segmentation using KMeans
+Date: 11-03-2026
+
+---
 
 ## Problem Statement
 Use K-Means clustering to group customers based on their income and spending behavior.
