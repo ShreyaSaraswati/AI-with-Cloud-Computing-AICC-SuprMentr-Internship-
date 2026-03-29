@@ -61,15 +61,15 @@ plt.show()
 
 ### Line plot for Revenue Trend
 
-![Line Plot](../images/T07_lineplot.png)
+![Line Plot](images/T07_lineplot.png)
 
 ### Scatter plot between marketing and profit
 
-![Scatter Plot](../images/T07_scatterplot.png)
+![Scatter Plot](images/T07_scatterplot.png)
 
 ### Correlation Map
 
-![Correlation Map](../images/T07_correlationmap.png)
+![Correlation Map](images/T07_correlationmap.png)
 
 **Correlation Matrix**
 
