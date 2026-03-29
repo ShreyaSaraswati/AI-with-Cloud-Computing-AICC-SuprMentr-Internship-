@@ -1,4 +1,7 @@
 # Assignment 06 – NumPy Speed Test
+Date: 20-02-2026
+
+---
 
 ## Problem Statement 
 Compare execution time of Python list vs NumPy array using 1 million numbers.  
