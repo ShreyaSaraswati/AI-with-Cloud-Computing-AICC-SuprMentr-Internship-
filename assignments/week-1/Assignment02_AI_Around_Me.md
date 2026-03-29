@@ -1,4 +1,8 @@
 # Assignment 02 – AI Around Me
+Date: 09-02-2026
+
+---
+
 
 ## Problem Statement
 List 10 real-life AI applications used daily and explain in 1–2 lines how Machine Learning works behind each.
