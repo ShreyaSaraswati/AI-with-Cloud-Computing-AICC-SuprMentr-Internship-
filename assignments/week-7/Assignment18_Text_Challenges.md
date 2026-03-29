@@ -1,4 +1,7 @@
 # Assignment 18 – Text Challenges
+Date: 20-03-2026
+
+---
 
 ## Description
 Natural Language Processing (NLP) requires clean and structured text data.  
