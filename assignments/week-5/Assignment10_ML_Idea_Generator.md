@@ -1,4 +1,7 @@
 # Assignment 10 – ML Idea Generator
+Date: 02-03-2026
+
+---
 
 ## Problem Statement
 Suggest real-world Machine Learning problem ideas from different domains.  
