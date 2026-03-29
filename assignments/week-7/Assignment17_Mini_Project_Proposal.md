@@ -1,4 +1,7 @@
 # Assignment 17 – Mini Project Proposal
+Date: 19-03-2026
+
+---
 
 ## Project Title
 Student Performance Predictor
