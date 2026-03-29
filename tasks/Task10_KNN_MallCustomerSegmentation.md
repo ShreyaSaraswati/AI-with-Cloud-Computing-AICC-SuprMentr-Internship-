@@ -1,4 +1,4 @@
-# Task 09 – Mall Customer Segmentation using KMeans
+# Task 10 – Mall Customer Segmentation using KMeans
 Date: 05-03-2026
 
 ---
