@@ -1,4 +1,7 @@
 # Assignment 07 – Dataset Detective
+Date: 24-02-2026
+
+---
 
 ## Problem Statement
 Load a dataset using Pandas and perform basic data analysis.
