@@ -10,12 +10,12 @@ This repository contains assignments and tasks completed as part of the **AI wit
 AI-with-Cloud-Computing-AICC-SuprMentr-Internship
 │
 ├── Assignments
-│   ├── images
-│   ├── Assignment-01.md
+│   ├── week-01
+│   |   ├── Assignment-01.ipynb
 │
 ├── Tasks
 │   ├── images
-│   ├── Task-01.md
+│   ├   |── Task-01.ipynb
 
 ```
 ## Key Areas Covered
